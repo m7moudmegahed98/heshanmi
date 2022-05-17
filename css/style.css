@@ -1,0 +1,51 @@
+/* Animation to move the name left then bottom
+then left then top then back to the first place */
+@keyframes moving{
+    0%{
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    25%{
+        margin-left: 60px;
+        margin-top: 0px;
+    }
+    50%{
+        margin-left: 60px;
+        margin-top: 60px;
+    }
+    75%{
+        margin-left: 0px;
+        margin-top: 60px;
+    }
+    100%{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+}
+/* Animation to colorize the name first red then
+orange then yellow then green then bqck to red  */
+@keyframes coloring{
+    0%{
+        color: rgb(245, 6, 6);
+    }
+    25%{
+        color: rgb(245, 141, 6);
+    }
+    50%{
+        color: rgb(245, 213, 6);
+    }
+    75%{
+        color: rgb(70, 245, 6);
+    }
+    100%{
+        color: rgb(245, 6, 6);
+    }
+}
+/* calling moving animation */
+h1{
+    animation:moving 8s infinite
+}
+/* calling coloring animation for letter*/
+h1 span{
+    animation:coloring 8s infinite
+}
